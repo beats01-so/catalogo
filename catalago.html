@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" >
+</html>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <!-- Incluindo Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        .card-filme {
+            background: #0a0a0a;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px;
+            transition: transform 0.3s;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            display: inline-block;
+        }
+
+        .card-filme:hover {
+            transform: translateY(-5px);
+        }
+
+        .poster {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff9800;
+        }
+
+        .conteudo {
+            padding: 20px;
+            position: relative;
+        }
+
+        .titulo {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        .genero {
+            background: #ff9800;
+            color: #2d2d2d;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .avaliacao {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .descricao {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #aaa;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .botao {
+            display: block;
+            width: 100%;
+            background: #ff9800;
+            color: #2d2d2d;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .botao:hover {
+            background: #e68900;
+        }
+
+        .ano-duracao {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .fa-star {
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+
+
+   <!--FILME 1-->
+    <div class="card-filme"{
+        display: inline-block;
+    }>
+        <img src="IMAGEM/5924e6cc83b872920b24ea5a6ad63079.jpg" alt="Poster do Filme" class="poster">
+        <div class="conteudo">
+            <h2 class="titulo">Amor de aluguel</h2>
+            <div class="ano-duracao">
+                <span>2003</span>
+                <span>1h 41min</span>
+            </div>
+            <div class="info">
+                <span class="genero">Comédia/Romance</span>
+                <div class="avaliacao">
+                    <i class="fa-solid fa-star"></i>
+                    5,2/10
+                </div>
+            </div>
+            <p class="descricao">
+             O nerd de ciências Alvin Johnson é especialista em engenharia, mas é incompetente
+             quando se trata de namoro. Um dia, uma gatora popular, Paris morgan, aparece na 
+             loja de carro onde ele trabalha depois da escola porque danificou o carro de sua
+             mãe e urgentemente precisa de reparos.
+                 
+        
+            </p>
+            <a href="#" class="botao">IMDB</a>
+        </div>
+    </div>
+
+
+
+   <!--FILME 2-->
+
+    <div class="card-filme"{
+        display: inline-block;
+    }>
+        <img src="IMAGEM/as-branquelas (1).jpg" alt="Poster do Filme" class="poster">
+        <div class="conteudo">
+            <h2 class="titulo">as branquelas</h2>
+            <div class="ano-duracao">
+                <span>2004</span>
+                <span>1h 49min</span>
+            </div>
+            <div class="info">
+                <span class="genero">Comédia/Crime</span>
+                <div class="avaliacao">
+                    <i class="fa-solid fa-star"></i>
+                    9.4/10
+                </div>
+            </div>
+            <p class="descricao">
+               Dois irmãos agentes do FBI, Marcus e Kevin, acidentemente
+               evitam que bandidos sejam presos em uma apreensão de drogas.
+               como castigo, eles são forçados a escoltar um par de socialistes
+               no Hamptons. Quando as meninas descobrem o plano da agência, elas 
+               se recusam a ir. Sem opção, os irmãos decidem fingir que são as irmãs.
+            </p>
+            <a href="#" class="botao">IMDB</a>
+        </div>
+    </div>
+
+   <!--FILME 3-->
+
+   <div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/069ef6bcd745999743b4620626808acd52900bb877b3fccd79c46549e2fdc7f9.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">É assim que acaba</h2>
+        <div class="ano-duracao">
+            <span>2024</span>
+            <span>2h 10min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Romance</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.1/10
+            </div>
+        </div>
+        <p class="descricao">
+           Lily Bloom decide começar uma nova vida em Boston e tentar abrir o seu 
+           próprio negócio. Como consequência de sua mudança de vida, Lily acredita
+           que encontrou o amor verdadeiro com Ryle, um charmoso neurocirurgião.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+
+<!--FILME 4-->
+
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/071675.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Estrelas além do tempo</h2>
+        <div class="ano-duracao">
+            <span>2016</span>
+            <span>2h 07min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Ficção histórica</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.4/10
+            </div>
+        </div>
+        <p class="descricao">
+           No auge da corrida espacial travada entre Estados Unidos e Rússia durante
+           Guerra Fria, uma equipe de Cientistas da NASA, formada exclusivamente por 
+           mulheres afro-americanas, provou ser o elemento crucial que faltava na equação 
+           para a vitória dos Estados Unidos.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+<!--FILME 5-->
+
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/images.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Ponte de terabítia</h2>
+        <div class="ano-duracao">
+            <span>2007</span>
+            <span>1h 36min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama/Romance</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.2/10
+            </div>
+        </div>
+        <p class="descricao">
+           Jess sente-se um estrano na escola e até mesmo em sua família.
+           Durante todo o verão ele treinou para ser o garoto mais rápido da 
+           escola, mas seus planos são ameaçados por Leslie, que vence uma corrida
+           que deveria ser apenas para garotos.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 6-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/5332040.webp" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Cruella</h2>
+        <div class="ano-duracao">
+            <span>2021</span>
+            <span>2h 14min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Crime/comédia</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+           Inteligente, criativa e determinada, Estella quer fazer
+           um nome para si através de seus desing e acaba chamando a 
+           atenção da Baronesa Von Hellman.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 7-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/images (1).jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Através da minha janela</h2>
+        <div class="ano-duracao">
+            <span>2022</span>
+            <span>1h 56min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Comédia/Romance</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.2/10
+            </div>
+        </div>
+        <p class="descricao">
+           Raquel é apaixonada pelo visinho, Ares, um rapaz frio que vive em 
+           um mundo completamente diferente do seu. No entanto, o acaso acaba 
+           unindo os dois, que se veem envolvidos em uma trama de desejo e amor.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 8-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/up.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">UP- altas aventuras</h2>
+        <div class="ano-duracao">
+            <span>2009</span>
+            <span>1h 35min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Infantil/Aventura</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.4/10
+            </div>
+        </div>
+        <p class="descricao">
+           Carl Fredricksen é um vendedor de balões que, aos 78 anos 
+           está prestes a perder a casa em que sempre viveu com sua esposa, falecida
+           ellie. Após um incidente, Carl é considerado uma ameaça pública e forçada a ser 
+           internado.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 9-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/OS BATUTINHAS.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Os batutinhas</h2>
+        <div class="ano-duracao">
+            <span>1994</span>
+            <span>1h 22min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Comédia/Infantil</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            A turma de pestinhas embarca em mais uma história cheia de confusões!
+             Alfafa é julgado culpado em uma reunião do Clube dos Homens que Odeiam Mulheres,
+            porque se apaixonou por Darla. Seus amigos fazem de tudo para acabar com o romance
+             dos dois, mas Alfafa está disposto a continuar o namoro.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 10-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/BELA E A FERA.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">A bela e a fera</h2>
+        <div class="ano-duracao">
+            <span>2017</span>
+            <span>2h 10min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Fantasia/Infantil</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            Moradora de uma pequena aldeia francesa, Bela tem o pai capturado
+             pela Fera e decide entregar sua vida ao estranho ser em troca da
+             liberdade do progenitor. 
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 11-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/Anne.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Anne with an e</h2>
+        <div class="ano-duracao">
+            <span>2017</span>
+            <span>3 temporadas</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.9/10
+            </div>
+        </div>
+        <p class="descricao">
+            Na década de 1890, uma menina órfã de 13 anos é enviada por engano
+             para viver com os irmãos mais velhos na Ilha do Príncipe Eduardo.
+             
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+
+<!--FILME 12-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/stanger things.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Stanger things</h2>
+        <div class="ano-duracao">
+            <span>2016</span>
+            <span>4 temporadas</span>
+        </div>
+        <div class="info">
+            <span class="genero">Terror</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.9/10
+            </div>
+        </div>
+        <p class="descricao">
+            Um grupo de amigos se envolve em uma série de eventos sobrenaturais 
+            na pacata cidade de Hawkins. Eles enfrentam criaturas monstruosas, agências
+            secretas do governo e se aventuram em dimensões paralelas.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 13-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/p_theprincessdiaries.jpeg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">O diário de uma princessa</h2>
+        <div class="ano-duracao">
+            <span>2001</span>
+            <span>1h 55min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Comédia/Infantil</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            Mia é uma garota de 15 anos que vive com sua mãe em São Francisco.
+             De repente, ela descobre que seu pai é o Príncipe de Genóvia, um pequeno 
+             país europeu. Ela recebe a visita de sua avó recém-descoberta, que passa
+             a lhe dar aulas de etiqueta, ensinando-a como uma princesa deve se portar. 
+             Mas quando se aproxima a data de seu aniversário, Mia precisa definir que caminho
+             pretende tomar em sua vida: tornar-se uma princesa e se mudar para Genóvia ou
+             permanecer morando com a mãe.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 14-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/hq720.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">O menino do pijama listrado</h2>
+        <div class="ano-duracao">
+            <span>2008</span>
+            <span>1h 34min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Guerra/Thriler</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.7/10
+            </div>
+        </div>
+        <p class="descricao">
+            Durante a Segunda Guerra Mundial, Bruno, um garoto de oito anos,
+             e sua família saem de Berlim para residir próximo a um campo de
+             concentração, onde seu pai acaba de se tornar comandante. Infeliz 
+             e solitário, ele vagueia fora de sua casa e certo dia encontra Shmuel,
+             um menino judeu de sua idade. Embora a cerca de arame farpado do campo
+             os separem, os meninos começam uma amizade proibida.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 15-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/COMO EU ERA ANTES DE VOCÊ.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Como eu era antes de você</h2>
+        <div class="ano-duracao">
+            <span>2016</span>
+            <span>1h 50min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Romance/Drama</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            De origem modesta e sem grandes aspirações, a peculiar Louisa Clark é
+             contratada para ser cuidadora de Will, um jovem tetraplégico
+             depressivo e cínico.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 16-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/FRIENDS.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Friends</h2>
+        <div class="ano-duracao">
+            <span>1994</span>
+            <span>10 temporadas</span>
+        </div>
+        <div class="info">
+            <span class="genero">Sitcom</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            Seis amigos, três homens e três mulheres, enfrentam a vida e
+             os amores em Nova York e adoram passar o tempo livre na 
+             cafeteria Central Perk.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 17-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/a_princesa_e_o_sapo_capa_gT3NEss.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">A princesa e o sapo</h2>
+        <div class="ano-duracao">
+            <span>2014</span>
+            <span>1h 37min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Musical/Infantil</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            Trabalhadora e ambiciosa, Tiana sonha um dia abrir o seu próprio
+             restaurante em Nova Orleans. Seus planos tomam um rumo diferente
+             quando ela conhece o príncipe Naveen, que foi transformado em sapo
+             pelo maldoso Dr. Facilier. Porém, o príncipe sapo tem esperanças de
+             se tornar um humano novamente se Tiana beijá-lo.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 18-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/images (2).jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Cobra kai</h2>
+        <div class="ano-duracao">
+            <span>2018</span>
+            <span>6 temporadas</span>
+        </div>
+        <div class="info">
+            <span class="genero">Drama</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.8/10
+            </div>
+        </div>
+        <p class="descricao">
+            Anos depois de perder o grande torneio de caratê, Johnny Lawrence
+             busca dar um novo significado para sua vida e abre o dojô Cobra Kai.
+             Com isso, ele acaba reacendendo sua antiga rivalidade com Daniel LaRusso.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 19-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/CINDERELA.jpg" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Cinderela</h2>
+        <div class="ano-duracao">
+            <span>2021</span>
+            <span>1h 53min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Musical/Fantasia</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                7.5/10
+            </div>
+        </div>
+        <p class="descricao">
+            Cinderella é uma moça determinada que embarca em uma aventura
+             musical para alcançar seus sonhos. Mas ela não está sozinha 
+             nessa empreitada, a garota conta com a ajuda de seu Fado Madrinho 
+             e de seus ratinhos.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+<!--FILME 20-->
+<div class="card-filme"{
+    display: inline-block;
+}>
+    <img src="IMAGEM/unnamed.webp" alt="Poster do Filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">Dia do sim</h2>
+        <div class="ano-duracao">
+            <span>2021</span>
+            <span>1h 29min</span>
+        </div>
+        <div class="info">
+            <span class="genero">Comédia/Infantil</span>
+            <div class="avaliacao">
+                <i class="fa-solid fa-star"></i>
+                9.6/10
+            </div>
+        </div>
+        <p class="descricao">
+            A turma de pestinhas embarca em mais uma história cheia de confusões!
+             Alfafa é julgado culpado em uma reunião do Clube dos Homens que Odeiam Mulheres,
+            porque se apaixonou por Darla. Seus amigos fazem de tudo para acabar com o romance
+             dos dois, mas Alfafa está disposto a continuar o namoro.
+        </p>
+        <a href="#" class="botao">IMDB</a>
+    </div>
+</div>
+
+</body>
+</html>
